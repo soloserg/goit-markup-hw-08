@@ -173,6 +173,7 @@ body {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms var(--timing-function);
 }
 .modal-field__modal-input:focus + .modal-field__icon {
   fill: var(--accent-color);
@@ -537,7 +538,6 @@ body {
 }
 
 .staff {
-  display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
