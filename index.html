@@ -64,7 +64,7 @@
         </div>
       </section>
       <!--Feature-->
-      <!-- <section class="feature">
+      <section class="feature">
         <div class="container">
           <ul class="feature-list list">
             <li class="feature-list__item">
@@ -117,7 +117,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--About-->
       <!-- <section class="section">
         <div class="container">
@@ -158,11 +158,23 @@
           <h2 class="about-title">Наша команда</h2>
           <ul class="staff list">
             <li class="staff__gallery">
-              <img
-                src="./images/demyan.jpg"
-                alt="игорь демьяненко"
-                width="270"
-                height="260"/>
+              <picture>
+              <source srcset="./images/staff/1x/desk/d-desk-1x.jpeg 1x,
+              ./images/staff/2x/desk/d-desk-2x.jpeg 2x" 
+              media="(min-width: 1200px)" 
+              />
+              <source srcset="./images/staff/1x/tab/d-tab-1x.jpeg 1x,
+              ./images/staff/2x/tab/d-tab-2x.jpeg 2x" 
+              media="(min-width: 768px)" 
+              />
+              <source srcset="./images/staff/1x/mob/d-mob-1x.jpeg 1x,
+               ./images/staff/2x/mob/d-mob-2x.jpeg 2x" 
+               media="(min-width: 480px)" 
+               />
+              <img src="./images/staff/1x/desk/d-desk-1x.jpeg" 
+              alt="игорь демьяненко" 
+              />
+              </picture>
               <div class="staff__list">
                 <h3 class="staff__title">Игорь Демьяненко</h3>
                 <p class="staff__position" lang="en">Product Designer</p>
@@ -201,12 +213,20 @@
               </div>
             </li>
             <li class="staff__gallery">
-              <img
-                src="./images/repin.jpg"
-                alt="ольга репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/staff/1x/desk/r-desk-1x.jpeg 1x, 
+                ./images/staff/2x/desk/r-desk-2x.jpeg 2x"
+                media="(min-width:1200px)"
+                />
+                <source srcset="./images/staff/1x/tab/r-tab-1x.jpeg 1x, 
+                ./images/staff/2x/tab/r-tab-2x.jpeg 2x"
+                media="(man-width:768px)"
+                />
+                <source srcset="./images/staff/1x/mob/r-mob-1x.jpeg 1x, 
+                ./images/staff/2x/mob/r-mob-2x.jpeg"
+                media="(min-width:480px)"/>
+                <img src="./images/staff/1x/desk/r-desk-1x.jpeg" alt="ольга репина"/>
+              </picture>
               <div class="staff__list">
                 <h3 class="staff__title">Ольга Репина</h3>
                 <p class="staff__position" lang="en">Frontend Developer</p>
@@ -243,12 +263,22 @@
               </div>
             </li>
             <li class="staff__gallery">
-              <img
-                src="./images/taras.jpg"
-                alt="николай тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/staff/1x/desk/t-desk-1x.jpeg 1x,
+                ./images/staff/2x/desk/t-desk-2x.jpeg 2x"
+                media="(min-width:1200px)"
+                />
+                <source srcset="./images/staff/1x/tab/t-tab-1x.jpeg 1x,
+                ./images/staff/2x/tab/t-tab-2x.jpeg 2x" 
+                media="(min-width:768px)" 
+                />
+                <source srcset="./images/staff/1x/mob/t-mob-1x.jpeg 1x,
+                ./images/staff/2x/mob/t-mob-2x.jpeg 2x" 
+                media="(min-width:480px)" 
+                />
+                <img src="./images/staff/1x/desk/t-desk-1x.jpeg" 
+                alt="николай тарасов" />
+              </picture>
               <div class="staff__list">
                 <h3 class="staff__title">Николай Тарасов</h3>
                 <p class="staff__position" lang="en">Marketing</p>
@@ -285,12 +315,21 @@
               </div>
             </li>
             <li class="staff__gallery">
-              <img
-                src="./images/ermak.jpg"
-                alt="михаил ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/staff/1x/desk/e-desk-1x.jpeg 1x,
+                ./images/staff/2x/desk/e-desk-2x.jpeg 2x"
+                media="(min-width:1200px)"
+                />
+                <source srcset="./images/staff/1x/tab/e-tab-1x.jpeg 1x,
+                ./images/staff/2x/tab/e-tab-2x.jpeg 2x" 
+                media="(min-width:768px)" 
+                />
+                <source srcset="./images/staff/1x/mob/e-mob-1x.jpeg 1x,
+                ./images/staff/2x/mob/e-mob-2x.jpeg 2x" 
+                media="(min-width:480px)" 
+                />
+                <img src="./images/staff/1x/desk/e-desk-1x.jpeg" alt="михаил ермаков" />
+              </picture>
               <div class="staff__list">
                 <h3 class="staff__title">Михаил Ермаков</h3>
                 <p class="staff__position" lang="en">UI Designer</p>

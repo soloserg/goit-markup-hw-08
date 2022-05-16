@@ -414,20 +414,37 @@ body {
   margin: 0 auto;
   padding: 116px 61px 120px 59px;
   background-color: var(--secondary-bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/hero-img/hero-Img-mob.jpeg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../hero-img/hero-Img-mob.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../hero-img/hero-Img-mob-2x.jpeg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     padding: 118px 204px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../hero-img/hero-Img-tab.jpeg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../hero-img/hero-Img-tab-2x.jpeg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../hero-img/hero-Img.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../hero-img/hero-Img-2x.png);
   }
 }
 
@@ -478,17 +495,21 @@ body {
 }
 
 .feature {
-  padding-top: var(--section-gap);
-  padding-bottom: var(--section-gap);
+  padding-bottom: 60px;
+  padding-top: 58px;
 }
 
-.feature-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    flex-wrap: wrap;
+  }
 }
 
 .feature-list__item {
-  width: 270px;
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .feature-list__item:nth-child(4n) {
@@ -512,6 +533,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
 }
 
