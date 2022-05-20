@@ -299,7 +299,7 @@ body {
   align-items: center;
 }
 
-.logo .header__logo {
+.logo.header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -493,10 +493,6 @@ body {
 }
 .logo .accent__header {
   color: var(--title-text-color);
-}
-
-.logo.header__logo {
-  margin-right: 93px;
 }
 
 .logo .accent__footer {
