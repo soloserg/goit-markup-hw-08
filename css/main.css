@@ -37,6 +37,10 @@ ol {
   text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 input {
   background-color: transparent;
 }
