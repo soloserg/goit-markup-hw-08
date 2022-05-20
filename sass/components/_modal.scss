@@ -3,8 +3,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -12,6 +12,10 @@
     border-radius: 4px;
     transition: transform 300ms;
     padding: 40px;
+    @include desktop {
+        min-width: 528px;
+        min-height: 581px;
+    }
 }
 
 .modal__close {
@@ -42,6 +46,7 @@
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-bottom: 12px;
+    
 }
 
 .modal-field {
