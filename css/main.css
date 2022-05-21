@@ -464,8 +464,7 @@ body {
   border-color: #ffffff;
   height: 100vh;
   width: 100vw;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 40px;
   background-color: #fff;
 }
 .mob-menu .container {
@@ -527,16 +526,23 @@ body {
   display: flex;
 }
 
+.mob-soc-list__item {
+  margin-right: 10px;
+}
+
 .mob-soc-list__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
-.mob-soc-list__item:not(:last-child) {
-  margin-right: 20px;
+.mob-soc-list__item:last-child .mob-soc-list__link {
+  padding: 0;
+  border: 0;
 }
 
 .logo {
