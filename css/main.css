@@ -80,6 +80,7 @@ body {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -318,7 +319,8 @@ body {
 .header > .container {
   display: flex;
   align-items: center;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo.header__logo {
