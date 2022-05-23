@@ -12,24 +12,37 @@ display: flex;
 }
 
 .contacts-content {
+    text-align: left;
+    justify-content: space-around;
     @include tablet {
-        margin-left: 76px;
 display: flex;
+    }
+}
+
+.footer-contacts {
+    margin-bottom: 70px;
+    @include desktop {
+margin-right: 70px;
     }
 }
 
 .logo.logo-footer {
     text-align: center;
     display: block;
+    @include desktop {
+            text-align: left;
+        }
 }
 
 .contacts-address {
     margin-top: 20px;
-    margin-bottom: 60px;
 }
 
 .contacts-list {
     text-align: center;
+    @include desktop {
+        text-align: left;
+    }
 }
 
 .contacts-list__item:not(:last-child) {
@@ -67,9 +80,6 @@ display: flex;
 
 .footer-soc {
     margin-bottom: 60px;
-    @include tablet {
-            margin-left: 165px;
-        }
 }
 
 .footer-soc__title {
