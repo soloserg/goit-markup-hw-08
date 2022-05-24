@@ -8,30 +8,31 @@
     }
 }
 .feature-list {
-flex-direction: column;
-&:not(:last-child) {
-    margin-bottom: 30px;
-}
 
     @include tablet {
         flex-wrap: wrap;
         margin: -15px;
-        flex-direction: row;
-    }
-
-    @include desktop {
-        flex-wrap: nowrap;
-        margin: -15px;
+        display: flex;
     }
 }
 
 .feature-list__item {
-flex-basis: calc((100% - 4 * 15px) / 2);
-margin: 15px;
-    @include desktop {
-width: 270px;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+        margin-bottom: 30px;
+    }
         }
+
+        @include tablet {
+flex-basis: calc ((100% - 4 * 15px) / 2);
+margin-bottom: 0; 
+margin: 15px;
 }
+
+    @include desktop {
+flex-basis: calc ((100% - 8 * 15px) / 4);
+        }
+    }
 
 .feature-list__thumb {
     height: 120px;
