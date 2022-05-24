@@ -14,13 +14,20 @@ display: flex;
 .contacts-content {
     text-align: left;
     justify-content: space-around;
+    margin-bottom: 60px;
     @include tablet {
 display: flex;
     }
+        @include desktop {
+            margin-bottom: 0;
+        }
 }
 
 .footer-contacts {
     margin-bottom: 70px;
+    @include tablet {
+        margin-bottom: 0;
+    }
     @include desktop {
 margin-right: 70px;
     }
@@ -76,10 +83,6 @@ margin-right: 70px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
-}
-
-.footer-soc {
-    margin-bottom: 60px;
 }
 
 .footer-soc__title {

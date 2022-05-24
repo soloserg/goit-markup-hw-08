@@ -16,9 +16,9 @@
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
         }
+    @media screen and (min-width: 768px) {
+    margin: -15px;}
 }
 
 .staff__gallery {
@@ -30,8 +30,7 @@
             margin-bottom: 30px;
         }
     }
-    margin-bottom: 30px;
-    margin-left: 30px;
+    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -39,14 +38,13 @@
     background-color: var(--primary-white-color);
     @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
+    margin: 15px;
+    height: auto;
     }
     @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
+    height: 100%;
         }
-}
-
-.staff__gallery:last-child {
-    margin-bottom: 0;
 }
 
 .staff__list {
