@@ -18,19 +18,17 @@
 
 .feature-list__item {
     @media screen and (max-width: 767px) {
-        &:not(:last-child) {
-        margin-bottom: 30px;
-    }
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
         }
 
-        @include tablet {
-flex-basis: calc ((100% - 4 * 15px) / 2);
-margin-bottom: 0; 
-margin: 15px;
-}
-
-    @include desktop {
-flex-basis: calc ((100% - 8 * 15px) / 4);
+    @include tablet {
+            margin: 15px;
+            flex-basis: calc((100% - 4 * 15px) / 2);
+        }
+    @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 8 * 15px) / 4);
         }
     }
 
@@ -55,7 +53,7 @@ flex-basis: calc ((100% - 8 * 15px) / 4);
     margin-bottom: 10px;
 }
 
-.feature-list__text {
+.feature-list__text { 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

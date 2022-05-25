@@ -668,28 +668,24 @@ body {
   .feature-list {
     flex-wrap: wrap;
     margin: -15px;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature-list {
     display: flex;
-    margin: -15px;
   }
 }
 
-.feature-list__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .feature-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .feature-list__item {
-    flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .feature-list__item {
-    width: 270px;
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
